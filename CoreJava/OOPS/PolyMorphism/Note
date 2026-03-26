@@ -28,3 +28,16 @@ Also keep in mind :-
     there exist another class D not extending any class
     obj = new D() --> this will not be allowed because
     obj is the reference varible of A so it can only be assigned to relatives of A.
+
+====================================================================
+Final Keyword
+
+The final keyword is used to make constants in java
+final keyword can be used for class variables and methods
+
+
+Whenever a class is made final this means no can extend it because overriding can be done on it.
+
+Also we can use the final keyword on the parent methods so that they could not be overridden in child
+Make a method final in parent class which is also there in the subclass
+

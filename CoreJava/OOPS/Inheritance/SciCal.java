@@ -1,4 +1,4 @@
-package OOPS.Inheritance;
+package CoreJava.OOPS.Inheritance;
 
 public class SciCal extends Calculator {
     SciCal(){

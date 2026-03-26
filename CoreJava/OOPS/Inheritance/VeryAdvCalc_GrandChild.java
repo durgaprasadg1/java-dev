@@ -1,4 +1,4 @@
-package OOPS.Inheritance;
+package CoreJava.OOPS.Inheritance;
 
 public class VeryAdvCalc_GrandChild extends SciCal{
     VeryAdvCalc_GrandChild(){

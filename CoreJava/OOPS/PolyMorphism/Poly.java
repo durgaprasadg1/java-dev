@@ -1,4 +1,4 @@
-package OOPS.PolyMorphism;
+package CoreJava.OOPS.PolyMorphism;
 
 class A{
     public void show(){
@@ -22,6 +22,8 @@ class D{
         System.out.println("C Kaa Hai Jo bhi Hai");
     }
 }
+
+
 public class Poly {
     public static void main(String[] args) {
         A refA = new A();
@@ -35,5 +37,14 @@ public class Poly {
 
 
 //        refA = new D(); // This is not allowed
+
+        final int a = 100; // To Make the constants,  in java we use the final key word
+
+        System.out.println(a);
+//        a = 2999;
+
+
     }
+
+
 }

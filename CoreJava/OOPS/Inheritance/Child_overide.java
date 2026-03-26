@@ -1,4 +1,4 @@
-package OOPS.Inheritance;
+package CoreJava.OOPS.Inheritance;
 
 public class Child_overide extends Override{
     public void call(){

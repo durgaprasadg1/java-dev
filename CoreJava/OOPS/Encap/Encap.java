@@ -1,4 +1,4 @@
-package OOPS.Encap;// package OOPS.Encap;
+package CoreJava.OOPS.Encap;// package CoreJava.OOPS.Encap;
 
 public class Encap {
     // Encap means storing the data in a secret box and not allowing the direct access from external committee.

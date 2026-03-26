@@ -1,4 +1,4 @@
-package OOPS.Inheritance;
+package CoreJava.OOPS.Inheritance;
 
 public class Calculator{
     Calculator(){
