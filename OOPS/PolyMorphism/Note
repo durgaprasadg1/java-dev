@@ -1,0 +1,30 @@
+Many + Functionalities
+There are 2 types of Polymorphism
+ 1. Compile time polymorphism ( Early Binding )
+ 2. Run Time polymorphism ( Late Binding )
+
+
+1. Compile Time Polymorphism
+   It is method overloading -> two methods same name different number of arguments
+2. Run time polymorphism
+    It is method Overriding -> two methods same name same number of arguments
+    but which method to run is decided by dynamic method dispatch
+
+=====================================================================================
+Dynamic method dispatch
+
+it works on the basis of type of object  (Class of which the object is created)
+Agar parent class A me koi  method hai , aur A kaa child B hai aur B me bhi same method hai
+then main function me jis Kisi kaa bhi object bnega uska hi method run hoga.
+
+
+Also keep in mind :-
+
+    If we are referring to a class A and made the object of B then it is fine only if B is a child of A
+    otherwise not
+    like
+    A obj = new B(); // ok if b is extending a;
+    and
+    there exist another class D not extending any class
+    obj = new D() --> this will not be allowed because
+    obj is the reference varible of A so it can only be assigned to relatives of A.
