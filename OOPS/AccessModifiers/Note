@@ -1,0 +1,30 @@
+There are 4 types of access Modifiers as public private protected and default
+
+Public -> Something need to accessed outside its package -> make it public. --> Access from anywhere.
+
+For Same packages without public they can be accessed it not pvt
+Outside the package they are needed to be the marked public
+
+
+Private -> Something that should not be able to be accessed outside its class itself, make it public
+private variable can only be used in same class
+
+By default -> if any variable / method is neither public nor private then it is a default.
+default allows the variable / method to be accessed in same package
+
+Protected -> The protected allow to access the variable/ method to be accessed in the same package AND also outside the package IF another class extends it.
+Like Same Package -> OK
+different package unrelated Class -> Not ok
+Different package related class (Extended base class) ->  OK
+
+
+----------------------------------------------------------------
+So when to use What
+----------------------------------------------------------------
+
+In One file there Can only be one public class (No 2 Public classes are allowed)
+
+So try to make your class public, instance variable pvt , methods public
+
+Try Not to keep anything default.
+
