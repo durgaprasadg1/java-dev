@@ -1,0 +1,19 @@
+Abstract KeyWord
+=================
+
+Jbb bhi koi class ko abstract bnate hai iska mtlb we dont know the current implementation of it but we know our software will definetly have that functionality so we just declare the function (method) then whichever the class will be extending it will definetly have to make that function as per there policy
+
+So for such things the class will be using abstract keyword for that method -> For this the class should also be declared as abstract.
+like we can see in Abstract keyword file that car has drive function but it is just declared not defined. So that declared function is completed in BMW class which extends the class Car.
+
+Yeah it will have the complex logic of driving car based on their own policies.
+
+REMEMBER ONE THING --> We cannot create the object of abstract class . Why ?
+Because, in abstract class there can be declaration of function not the definition of the function so declaraton only cant run if called from object hence it wont allow.
+------------------------------------------------------------
+
+A Abstract class can  contain only implemented method or only many abstract methods which will defined in child class or can have the both. (Dono bhi rhh to skte hi hai)
+
+Parantu jitne abstract method parent class me hogi utne saare Child me bhi defined hoge otherewise error dega.Even if you are not able to implement an abstract method atleast define it to make errorFree.
+
+Or make that child class abstract and then again extend it when the function become implemetable.
