@@ -1,0 +1,55 @@
+ Here inheritance is similar as in case of humans , jo parents kaa hai vo apna hi hai .Similar to this, when we have two similar thing which some sort of code part similar, there we use extetion of  the class to avoid the repeatition of code. This can be identified by is-a relationship.
+
+Below is the example.
+
+Like calculator is the class having function +  * / -
+ Then We need make a sci. Calculator. then it will also have sum code same for /*-+ so
+Sci. cal is a Cal , so it can be a child of Calc having code for /*-+
+
+this is Called as Inheritance
+
+You can Check for eg in Inherit File
+
+ we can extend a child class in grandChild class. this is class as Multilevel Inheritance. We cannot extend two classes at the same point like we cant write like class A extend B C, this is multiple inheritance which is not allowed in JAVA.
+
+Why ?
+ Because if both parent have a single method common but with same/diff functionality, then while calling that method from childs object will confuse where to go to run. that is the Confusion.
+
+This Is ambiguity problem.
+To implement the multiple inheritance like thing then we use the interfaces.
+
+ ---------------------------------------------
+    SUPER CLASS RELATED CONCEPTS
+ ---------------------------------------------
+
+
+ Listen when a child class extends a parent class and then child class object is made then it always call the parent class default constructor. Why ?
+
+ Bacause every child class constructor have default super function call in default constructor. Even if you wont create it (super func call) it will be there calling the parent class constructor.
+
+ -- IMP ---> So by default every constructor have first statement as super() in it.
+ -- IMP ---> Jis type kaa const (Parameterised / Non Parameterised) child me hai agr uss hi type kaa parent me hai to vhi wala run hoga naa hone pe default wala run hoga
+
+ Every construtor will have that by def
+
+ Jbb bhi Koi object bnega tbb
+    1. sabse pahle parent class Load hogi
+    2. Child class Load hogi,
+    3. Child class ka cons. super ko call krega then vo run hone ke baad
+    4. Karya sampann Hoga
+
+
+-- Note -> Every Class Extends Object class
+
+If we wanna call the default constructor of the same class from another constructor (May be the parameterised one) then we use this() function in the parameterised function
+
+
+--------------------------------------
+METHOD OVERRIDING
+--------------------------------------
+
+A parent class have a function with any name but the same named function if there is in the child class then always the child class function will be priortized.
+
+ but it is used for better readability and compile-time error checking kyuki vo dynamically select krta hia konta run krna hai aur konta nhi to
+
+

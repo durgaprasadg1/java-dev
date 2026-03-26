@@ -1,7 +1,9 @@
 package OOPS.Inheritance;
 
 public class Calculator{
-    
+    Calculator(){
+        System.out.println("Calculator ka Constructor");
+    }
     public int sum(int a , int b){
         return a + b;
     }
