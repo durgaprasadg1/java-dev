@@ -1,0 +1,33 @@
+Interface are the public abstract Classes
+they ARE  class like thing but have all the method as abstract
+We Create an Interface :-  it is for the design, based on the design, the class implement (here we say implement instead of extend) it will be implementing the real logic.By using the Interface, we can just provide the design
+
+One Rule of the interface is that, whenever a class implements an interface we have define all the abstract methods (not declare) in that class but if we fails to define all the methods, our that class will also become abstract.
+
+
+Abstract kaa example you can see in sample.java
+
+We can also define the variables in the interfaces like a normal class but this time those variables are final and static. so we always have to define
+
+As they are static so they can be used with there classname. No need to develop the object of the class.
+
+We can implement MORE THAN 1 interfaces at the time, but the rule of defineing the all declared method will be the same.
+HERE IS THE EG.
+class BMW implements Car, Bike{ }
+
+One interface can also extend the another interface.
+Understand the chronology
+class -> class = extends
+interface -> class = implements
+interface -> interface = extends (They are also implementing the inheritance)
+
+
+One of the use of interface is the flexibilty;
+
+There are 3 types of interface as :
+    a. Normal : Interface with 2 or more interface
+    b. Functional / SAM ( Single Abstract method)
+    c. Marker : Interface with no method
+
+b. F(x) Interface :- For this interface to be defined we have an annotation like @Override (it is for safer coding while overriding the methods)
+its annotation is @FunctionalInterface, this annotation allows only one method to be created in that interface

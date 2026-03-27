@@ -1,0 +1,29 @@
+As every class extends the object class. THe collection framework is also there which is the collection of many data structure. they also extends it.
+
+But one thing is there, the primitives never uses / extends the classes.
+They directly store the values
+
+So java has made Classes for primitive datatypes those classes are called as Wrapper Class.
+int -> Integer, char -> Character , double -> Double
+Kabhi kabhi hi inka kaam padta hai
+
+
+int num = 1;
+Integer num1 = num;
+System.out.println(num1);
+
+Here we assigned Primitive to the ref var of Integer.
+This is Clas Autoboxing
+(Primitive se obj me bnaa daale)
+
+Vice versa bhi hota hai jbb
+
+int num2 = num1.intValue();
+System.out.println(num2);
+
+This is clas AutoUnBoxing
+===============================
+String -> int
+
+String s = "12"
+int num = Integer.parseInt(s) -> by using parseInt function any string will be converted into Int

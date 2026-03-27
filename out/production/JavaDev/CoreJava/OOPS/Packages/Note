@@ -1,0 +1,8 @@
+Packages Are  the Folder.
+We Need to import the classes from different folders to make the objects of them Also we import DS like List from utils folder in java.
+
+We know there are multiple packages inside Java package
+Different classes aare imported from different folders.
+
+But System is also a class but it is never imported.
+By default Java.lang folder is imported in every Java File. There the system exist hence no need to import.
