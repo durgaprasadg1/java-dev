@@ -31,3 +31,7 @@ There are 3 types of interface as :
 
 b. F(x) Interface :- For this interface to be defined we have an annotation like @Override (it is for safer coding while overriding the methods)
 its annotation is @FunctionalInterface, this annotation allows only one method to be created in that interface
+
+the best part of the functional interface is to allow (lambda expression ) -> Learn about it written no where (it is used to redunce the number of lines of code.
+
+Lambda expression are only allowed to work in Functional Interfaces
