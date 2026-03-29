@@ -68,3 +68,6 @@ so the thread class implements the runnable interface which all the run method (
 so we can directly implements it so that we can extend classes but still there is a problem , how can we run the code or call run() method
 
 so we create 2 threads passing the reference variable of Runnable (obj1 , obj2) in constructor
+
+
+A thread is also having the state like process as new, runnable (ready for process) , running, waiting , end (terminated  for process)
