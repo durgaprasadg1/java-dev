@@ -1,0 +1,6 @@
+record A(int a, String b){}
+
+this is the alternative kind of thing for the class where every variable is final . We can change , we cannot define instance variable but only can define the variable in that () , here those variables are together are called components.
+
+This will have almost all thing similar as the class but in class we can change the values of variable here we cannot. we dont have getter setter like the class. This (record) is used to send the data (object) which is not needed anywhere to be changed.
+

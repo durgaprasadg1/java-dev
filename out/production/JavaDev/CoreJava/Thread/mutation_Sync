@@ -1,0 +1,44 @@
+Bhai Abhi print krr kre hai to kuch nhi lgta lekin thread ke ander agar calculation krr rhe hote to ky krte
+like isme ky ho skta hai ki apne 2 threads same kaam saath me krr rhe ho
+like consider a scenario in which
+
+
+class Counter{
+    int cnt = 0;
+    public  void inc(){
+        cnt++;
+    }
+}
+
+public class Sync {
+    public static void main(String[] args) {
+        Counter a = new Counter();
+        Runnable A = ()->{
+            for (int i = 0 ; i < 200 ; i++){
+                a.inc();
+            }
+        };
+        Runnable B = ()->{
+            for (int i = 0 ; i < 200 ; i++){
+                a.inc();
+            }
+        };
+        sout(a.cnt)
+    }
+}
+
+Here in this case we would think that the output will be 400,
+but no, when those threads are running parallely the main function excecutes the third statement there which is to print the value. this will print the value of cnt even when the thread excecution is not completed properly.
+
+So to solve this we must wait for thread to complete their execution and come back so we use join method for each thread . So Now the waiting part is done. But it is noe over yet.
+
+There is one more chance by which we can get the wrong ans.
+It can happen that the thread may run and increment the value at same time.
+Like when the value of a count is 2 and at that time both the thread started runnig and both will increamnt the count by 1 making it 3 so there willbe the loss of value which should not be done so we have to make it consistent like when one thread is running we should not allow another thread to use it.
+So here is the solution. Make the method Synchronised.
+
+just by adding the key word as synchronised in the method of incrementation we can have the synchronisation in excuting the threads.
+
+this will maintain consistency and give correct ans now.
+
+Can see the full code in sync.java

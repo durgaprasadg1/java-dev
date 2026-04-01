@@ -1,0 +1,73 @@
+Jbb bhi apn code likhte hai uske saath hi apne ko suggestion aate rhte hai aur error rha to vo bhi dikhte rhte hai, to vo kiske vajah se rhte hai, inn threads ke vajah se hi
+
+Those things run at the same time (i.e. Parallel) with thehelp of threads
+
+WE can make threads using JAVA.
+We have to make class and extend it with the class thread class
+but this only will not make the things perfect
+Within those classes define the method which needed to be worked parallel, but name that method as run (will tell you the reason)
+
+then in main fx make their object and call the .start() method, this start method is parent class method which triggers the run method ,then the things goes properly.
+
+
+class A extends Thread{
+    public void run(){
+        for(int i = 0 ; i < 100 ; i++){
+            System.out.println("A kaa Hai");
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+public static void main(String[] args) {
+        A obj1 = new A();
+        B obj2 = new B();
+        obj1.start();
+        obj2.start();
+    }
+
+It prints properly which shows parallel processing.
+
+Behind the scenes we have scheduler to give the time to threads to run.
+We cannot set the priority but still we can say to our scheduler to that our priority, we have method to set priority to threads as setPriority() here we can pass Thread.MAX_PRIORITY which is 10 and the lowest priority is 1, by default it is 5 for all thread
+
+But Still the threads are looked to be run like they are given more time, so one thing we can do to optimise make.
+we need add some time after the execution of each thread by putting the sleep time (delay)
+
+
+it will start printing like this
+
+B kaa Hai
+B kaa Hai
+A kaa Hai
+A kaa Hai
+B kaa Hai
+A kaa Hai
+B kaa Hai
+B kaa Hai
+A kaa Hai
+B kaa Hai
+A kaa Hai
+B kaa Hai
+A kaa Hai
+A kaa Hai
+B kaa Hai
+B kaa Hai
+A kaa Hai
+A kaa Hai
+B kaa Hai
+B kaa Hai
+
+
+BUT REMEMBER :- the way of extending thread class is not ok. because the same will not allow us to extend more classes if required.
+so the thread class implements the runnable interface which all the run method (See by control click)
+
+so we can directly implements it so that we can extend classes but still there is a problem , how can we run the code or call run() method
+
+so we create 2 threads passing the reference variable of Runnable (obj1 , obj2) in constructor
+
+
+A thread is also having the state like process as new, runnable (ready for process) , running, waiting , end (terminated  for process)

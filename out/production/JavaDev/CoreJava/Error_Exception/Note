@@ -1,0 +1,55 @@
+There are 3 types of error as
+  a. Compile time errors : Error shown will compilation (Syntax wale)
+  b. Runtime Errors :  Execution stops due to them, these are clas Exeption
+  c. Logical Error :  No syntastical -> they are Bugs in code
+
+ Even though the runtime error exists, the application should not be stopped at all, so we handle the error;
+ this is clas exception handling.
+
+
+ For handling them we use tryCatch block. Shown In file
+
+ use Customised Message for specific type of errors like catching them , We can have multiple catch block for a single try.
+
+ try{}
+ catch(ArithmeticExeption e ){
+    sout("Aukat me Udo");
+ }
+ catch(ArrayIndexOutOfBoundException e){
+    sout("Hero Bnn Rha Hai Ky");
+}
+catch(Exception e){
+    sout("Something went wrong")
+}
+
+But we will need many exception catching block for just error so also give one catch block(Exception e) for handling all exception (kyuki ek ek bhi kbb tkk dedege)
+
+Parent exception [Exception e] should always be at tip
+
+
+The Parent Exception class also extends the class -> Throwable;
+class Throwable is implemented by two Classes as Error and Exception
+
+Exception -> 2 main types
+Unchecked Exception  : the Compiler when dont force to handle the exception, its totally upon us to handle or not
+
+Checked exception : We reaaly need to handle them
+
+Runtime exception are unchecked exception and rest of the exception like SQL exception IO exception are the checked exception
+there r multiple types of runtime exception as Nullptr exception, ArithmeticException , ArrayIndexOutOfBoundexception.
+
+=========================================================
+
+There are 2 keywords as throw and throws
+throw is for throwing the new exception and throws is for when we knows that it can throw the exception so, it becme complsory to handle the error
+
+we can say
+class A {
+    public void show() throws Exception{
+            // code
+    }
+
+    the responsiblity of handling the exception is on the parent like from where it is called
+    there in parent class surround the call with the try catch
+
+}
