@@ -1,0 +1,14 @@
+As we have studied about the abstract class and the final class
+the sealed class is combo of both
+How ? -> Look Here -> Abstract class are meant to be inherited and final class cannot be inherited.
+SO there should be some class which can be allowed to inherit by some classes while not allowed to be extend it.
+
+Those classes permitted to inherit are required to be sealed, non-sealed or final and must extending the sealed class.
+
+if subclass is made sealed it is also required to give permission to next classes to extend it so will be using non sealed.
+final subclass are also not allowed to be extended again by any other class
+
+it is used in design of application.
+
+
+Class ke jaise interface me hota hai sealed kaa lekin iss barr final keyword nhi de sakte interface ko
